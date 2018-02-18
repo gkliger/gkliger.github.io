@@ -1,3 +1,41 @@
 p {
   font-family: Arial;
 }
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+nav li {
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border: 3px solid green;
+}
+
+#contact {
+  display: block;
+  color: white;
+  background-color: #333;
+  border: 3px solid green;
+  padding: 3px 0;
+}
+
+.center {
+    text-align: center;
+}
+
