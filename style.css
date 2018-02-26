@@ -4,6 +4,7 @@ p {
 
 li {
   font-family: Arial;
+  margin: 10px;
 }
 
 .topnav a:hover {
@@ -37,7 +38,7 @@ li {
 .column {
     float: left;
     width: 33.33%;
-    padding: 10px;
+    padding: 0px;
 }
 
 .row:after {
