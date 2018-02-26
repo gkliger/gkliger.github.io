@@ -1,79 +1,192 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Gavin Kliger</title>
-    <link href="./style.css" type="text/css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="topnav">
-        <a href="./index.html">Homepage</a>
-        <a href="./files/resume.pdf" target="_blank">Resume</a>
-        <a href="./awards.html">Projects</a>
-    </div>
-    <h1 class="header">Gavin Kliger</h1>
-    <div class="row">
-      <div class="column">
-        <h2>About Me</h2>
-        <p>
-            I am a freshman studying Electrical Engineering and Computer Science at UC Berkeley.
-            Currently, I am exploring summer internship opportunities. I am interested in autonomous
-            vehicle controls, rocket technology, and machine learning. When I am not busy with school,
-            I enjoy reading science fiction and working on projects. You can see some of my work on 
-            <a href="https://github.com/gkliger" target="_blank">Github</a>, but the vast majority
-            is stored on a private repository.
-        </p>
-        <h2>Prior Experience</h2>
-        <ul>
-            <li>In the summer of 2017, I worked as a STEM teacher at public schools in Irvine. I worked full time and taught 6th graders 
-              how to program VEX and MindStorm robots. I also taught my students how to use 3D modeling software to create 
-              3D printed objects, and the basics of cirucit design. I gained experience in communication and explaining 
-              complicated topics. It was very rewarding to help others.</li>
-            <li>In the summer fo 2016, I was part of the COSMOS (California State Academy for Math and Science) program at UCI.
-              I worked with a team of three other high school students to design and develop a virtual museum iOS application.
-              We used Apple's 3D Scene Kit to create a 3D room filled with interactive museum exhibits. Professor Martin Jaroszewicz
-              helped us to add 3D sounds to our application. I gained valuable experience working with a small team to 
-              meet deadlines and develop a large and complex application.</li>
-        </ul>
-      </div>
-      <div class="column">
-        <h2>My Goals</h2>
-        <p>
-            I want to intern for a company that will push me to influence the future. Whether that means working in the 
-            rocket industry, automobile industry, or some other sphere, I know that I will contribute insight and creativity
-            towards meeting the challenges posed.
-        </p>
-        <h2>Computer Languages</h2>
-        <ul>
-            <li>Java, Python</li>
-            <li>SQL, Scheme</li>
-            <li>HTML, JavaScript, CSS</li>
-            <li>Swift, MATLAB</li>
-        </ul>
-        <h2>Awards/Distinctions</h2>
-        <ul>
-          <li>Eagle Scout</li>
-          <li>National Merit Scholar</li>
-          <li>National AP Scholar</li>
-          <li>Certificate of Merit Level 10 Pianist</li>
-          <li>Black Belt First Dan (Taekwondo)</li>
-        </ul>
-      </div>
-      <div class="column">
-        <img src="./images/profilepic.jpg" alt="A picture of Gavin" style="width:200px;height:270px;" />
-        <h2>My Hobbies</h2>
-        <p>
-          In my spare time, I enjoy playing the piano and clarinet and attending music concerts at Berkeley. I am also 
-          involved in several on campus groups. I am an active member of Berkeley IEEE and served as a Web Officer for 
-          the organization. I am also a member of HKN, Berkeley's EECS Honor Society, which organizes on campus events.
-        </p>
-      </div>
-    </div>
-    <div id="contact" class="footer center">
-      <p>
-        <strong>email: gavinkliger@gmail.com | phone: 949-441-8800 | address: 2400 Durant Av, Berkeley, CA, 94720</strong>
-      </p>
-    </div>
-  </body>
-</html>
-<!-- Note that this website is in development -->
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <title>Gavin Kliger</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    /* Header/logo Title */
+
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+    }
+
+    /* Increase the font size of the heading */
+
+    .header h1 {
+      font-size: 40px;
+    }
+
+    /* Style the top navigation bar */
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /* Style the navigation bar links */
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    /* Right-aligned link */
+
+    .navbar a.right {
+      float: right;
+    }
+
+    /* Change color on hover */
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Column container */
+
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+
+    /* Sidebar/left column */
+
+    .side {
+      -ms-flex: 30%;
+      /* IE10 */
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* Main column */
+
+    .main {
+      -ms-flex: 70%;
+      /* IE10 */
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Fake image, just for this example */
+
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Footer */
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+    }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+    @media (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+    @media (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Gavin Kliger</h1>
+    <p>Design. Develop. Create.</p>
+  </div>
+
+  <div class="navbar">
+    <a href="./index.html">Homepage</a>
+    <a href="./files/resume.pdf" target="_blank">Resume</a>
+    <a href="./awards.html">Projects</a>
+    <a href="#contact" class="right">Contact</a>
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <img src="./images/profile2.jpg" alt="A picture of Gavin" style="width:310px;height:300px;" />
+      <p>I am a freshman studying Electrical Engineering and Computer Science at UC Berkeley. I am interested in autonomous
+        vehicle controls, rocket technology, and machine learning.You can see some of my public work on
+        <a href="https://github.com/gkliger" target="_blank">Github.</a>
+      </p>
+      <h3>Awards and Achievements</h3>
+      <ul>
+        <li>Eagle Scout</li>
+        <li>National Merit Scholar</li>
+        <li>National AP Scholar</li>
+        <li>Certificate of Merit Level 10 Pianist</li>
+        <li>Black Belt First Dan (Taekwondo)</li>
+      </ul>
+    </div>
+    <div class="main">
+      <h2>MY GOALS AND INTERESTS</h2>
+      <h4>The sky's the limit</h5>
+        <img src="./images/rocket.jpg" alt="A picture of rocket" style="width:900px;height:300px;" />
+        <p>I want to work for a company that will push me to influence the future. Whether that means working in the rocket
+          industry, automobile industry, or some other sphere, I know that I will contribute insight and creativity towards
+          meeting the challenges posed.
+        </p>
+        <br>
+        <h2>MY HOBBIES AND AFFILIATIONS</h2>
+        <h4>Birds of a feather...</h5>
+          <img src="./images/ieee.jpg" alt="A picture of me with IEEE officers" style="width:900px;height:300px;" />
+          <p>In my spare time, I enjoy playing the piano and clarinet and attending music concerts at Berkeley. I am also involved
+            in several on campus groups. I am an active member of Berkeley IEEE and served as a Web Officer for the organization.
+            I am also a member of HKN, Berkeley's EECS Honor Society, which organizes on campus events.</p>
+    </div>
+  </div>
+
+  <div class="footer" id="contact">
+    <h2>email: gavinkliger@gmail.com | phone: 949-441-8800 | address: 2400 Durant Av, Berkeley, CA, 94720</h2>
+  </div>
+
+
+</body>
+
+</html>
