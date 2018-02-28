@@ -15,16 +15,6 @@
     line-height: 1.6;
   }
 
-  .side p {
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 310px;
-  }
-
-  .main p {
-    max-width: 900px;
-  }
-
     /* Header/logo Title */
 
     .header {
@@ -172,12 +162,7 @@
     padding: 20px;
 }
 
-p.desc {
-    max-width: 1097px;
-    font-family: Arial;
-    font-size: 18px;
-    line-height: 1.6;
-}
+
 
 
 .card {
