@@ -140,15 +140,14 @@
       background-color: #ddd;
     }
 
-    #projects th {
+#projects th {
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
       background-color: #7c808f;
       color: white;
-    }
-
-    .center {
+}
+.center {
     margin: auto;
     width: 50%;
     border: 3px solid green;
@@ -161,8 +160,6 @@
     width: 100%;
     padding: 20px;
 }
-
-
 
 
 .card {
