@@ -1,155 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Projects</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./style.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="faviconpack/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="faviconpack/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="faviconpack/favicon-16x16.png">
-  <link rel="manifest" href="faviconpack/site.webmanifest">
-  <link rel="mask-icon" href="faviconpack/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <title>Gavin Kliger Projects</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gavin Kliger Projects">
+    <meta name="keywords" content="Gavin Kliger,Gavin,Kliger,Projects,Resume,Computer Science,programming,Berkeley,UC Berkeley,Cal">
+    <meta name="author" content="Gavin Kliger">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="faviconpack/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="faviconpack/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="faviconpack/favicon-16x16.png">
+    <link rel="manifest" href="faviconpack/site.webmanifest">
+    <link rel="mask-icon" href="faviconpack/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body id="projects">
-  <div class="header">
-    <h1>My Projects</h1>
-    <p>Fueling the future</p>
-  </div>
-  <div class="navbar">
-    <a href="./index.html">Homepage</a>
-    <a href="./files/resume.pdf" target="_blank">Resume</a>
-    <a href="./awards.html">Projects</a>
-    <a href="#contact" class="right">Contact</a>
-  </div>
-  <table id="projects">
-    <tr>
-      <th>Project Description</th>
-      <th>Years Developed</th>
-      <th>More Info</th>
-    </tr>
-
-    <tr>
-      <td>Developed a personal website using HTML, CSS, and JS.</td>
-      <td>2018-Present</td>
-      <td><a href="#pic1">More Detail</a></td>
-    </tr>
-      <tr>
-          <td>Created a 2D interactive adventure game and designed and implemented a world generation algorithm.</td>
-          <td>2018</td>
-          <td><a href="#2D">More Detail</a></td>
-      </tr>
-      <tr>
-          <td>Used Java to develop a universe simulation with gravity and inelastic collisions.</td>
-          <td>2018</td>
-          <td><a href="#uni">More Detail</a></td>
-      </tr>
-    <tr>
-      <td>Used Python to implement a fully functional interpreter for the Scheme programming language. Ensured that evaluation was
-      properly tail recursive.</td>
-      <td>2017</td>
-      <td><a href="#scm">More Detail</a></td>
-    </tr>
-    <tr>
-      <td>Programmed the game logic for a tower defense game based on Plants vs Zombies called "Ants vs. SomeBees" in Python. Project utilized functional
-      and object-oriented programming paradigms.</td>
-      <td>2017</td>
-      <td><a href="#ants">More Detail</a></td>
-    </tr>
-    <tr>
-      <td>Implemented an application to create a Voronoi diagram visualization of nearby restaurants and their ratings using the
-      Yelp academic dataset in Python. Application used machine learning techniques to predict restaurant ratings.</td>
-      <td>2017</td>
-      <td><a href="#map">More Detail</a></td>
-    </tr>
-    <tr>
-      <td>Developed a simulator and several strategies for the dice game Hog using Python.</td>
-      <td>2017</td>
-      <td><a href="#hog">More Detail</a></td>
-    </tr>
-    <tr>
-      <td>Developed a virtual museum iOS application using Apple's 3D Scene Kit and incorporating 3D sound. Written in Swift 2.2.</td>
-      <td>2016</td>
-      <td>
-        <a href="#mus">More Detail</a>
-      </td>
-    </tr>
-  </table>
-  <div class="row">
-    <div class="maincolumn">
-        <div class="card">
-            <h2 id="uni">Universe Simulator</h2>
-            <h5>January, 2018</h5>
-            <img src="./images/uni.jpg" class="center" alt="A picture of the simulator" style="width:100%;"/>
-            <p class="desc">This project was essentially a physics simulator. The program could read in information about a universe
-            and the objects within by looking through a text file. From there, it would render the objects and show
-            their interactions over time. My simulation accounted for gravitational force, and allowed for inelastic collisions.
-            I used the Princeton StdDraw class to render the objects. </p>
-        </div>
-      <div class="card">
-        <h2 id="scm">Scheme Interpreter</h2>
-        <h5>November - December, 2017</h5>
-        <img src="./images/scm.jpg" class="center" alt="A picture of the interpreter" style="width:100%;"/>
-        <p class="desc">In my first delve into interpreters, I used Python to implement a fully functional interpreter for the Scheme
-            programming language. Although Scheme is a fairly simple language, it was suprisingly challenging to implement all of its
-            features. I used a read-evaluate-print loop to lex, parse and interpret user input. My interpreter supported proper
-            tail recursion and macros. Boolean logic, functions, lambdas, and conditionals were all supported. I wrote extensive
-            unit tests to verify the correctness of my implementation. </p>
-      </div>
-      <div class="card"><h2 id="ants">Ants vs Bees Tower Defense Game</h2>
-        <h5>November, 2017</h5>
-        <img src="./images/ants.jpg" class="center" alt="A picture of the game" style="width:100%;"/>
-        <p class="desc">As my second game, I implemented the logic for a tower defense game using Python. I implemented multiple
-          tower (ant) classes and enemy (bee) classes, including long ranged thrower ants, short range one-hit-kill ants,
-            armored ant tanks, and long range de-buff towers with slow, stun, and damage over time effects.
-          This was a large project, and made use of class inheritance. Working on this project taught me the importance of
-          controlling complexity with well thought out code. I was provided with a graphical user interface to accompany the game.</p>
-      </div>
-      <div class="card">
-        <h2 id="map">Restaraunt Map Application</h2>
-        <h5>October, 2017</h5>
-        <img src="./images/map.jpg" class="center" alt="A picture of the map" style="width:100%;" />
-        <p class="desc">For this project, I used the Python and the Yelp academic dataset to model restaraunts around Berkeley, using their 
-          names, locations, categories, prices, and reviews. I then implemented a Yelp-powered restaraunt recommedation program. 
-          The program takes a user's location, and returns a centroid corresponding to the cluster of retaraunts nearest to the user's 
-          position. I used a k-means algorithim to group restaraunts into clusters. From this cluster, I then used machine
-          learning techniques to predict ratings for the unrated restaraunts based on the user's previous ratings. For the area 
-          closest to each centroid, I assigned a color based on the average rating for the restarunts in the cluster, and used 
-          this to create a voronoi diagram. </p>
-      </div>
-      <div class="card">
-        <h2 id="hog">Hog Dice Game Simulator</h2>
-        <h5>October, 2017</h5>
-        <img src="./images/hog.jpg" class="center" alt="A picture of hog interface" style="width:100%;"/>
-        <p class="desc">For my first game, I worked to implement a simulator for a more complex version of the popular dice game Hog.
-          I used Python to create a dice function that could simulate dice rolls. I then wrote a takeTurn function that could take 
-          a set of dice, a game state, and a strategy, and then make a play accordingly. Functions were added as needed so that human players
-          could play against the computer, the computer could play against the computer, and players could play against each other.
-          The simulator provided commentary during games. I was provided with a basic framework and graphical interface to use in 
-          my program. I used my simulation to design, test, and develop different strategies for my Hog game.</p>
-      </div>
-      <div class="card">
-        <h2 id="mus">Virtual Museum iOS Application</h2>
-        <h5>July - August, 2016</h5>
-        <img src="./images/virtualmuseum.jpg" class="center" alt="A picture of virtual museum" style="width:100%;" />
-        <p class="desc">This project was my first major computer science project. I stayed at UCI for a month as part of the COSMOS (California State 
-          Academy for Math and Science) program. I was part of a 4 member team of high school students tasked with creating an application
-          that could incorporate 3D sound. Essentially, 3D sound allows for the specific placement of sounds within a 3D scene, which can 
-          add realism to virtual spaces. Our team decided to develop a virtual museum application, so that people without physical access to 
-          traditional  museums could instead explore them from their mobile devices. As part of the project, I designed 3D exhibit models
-          and placed them within a 3D scene using Apple's 3D Scenekit. Our app allowed for users to navigate between exhibits and listen to 
-          recorded scripts about each exhibit. The 3D sound scene responded to viewing angle using simple linear panning techniques.
-          The project was coded primarily in Swift 2.2 using Xcode, though we also used sound editing software and 3D modeling software.
-          You can view our research paper <a href="./files/cosmospaper.pdf" target="_blank">here</a>.</p>
-      </div>
+    <div class="header">
+        <h1>My Projects</h1>
+        <p>Fueling the future</p>
     </div>
-  </div>
-  
-  <div class="footer" id="contact">
-    <h2>email: gavinkliger@gmail.com | phone: 949-441-8800 | address: 2400 Durant Av, Berkeley, CA, 94720</h2>
-  </div>
+    <div class="navbar">
+        <a href="./index.html">Homepage</a>
+        <a href="./files/resume.pdf" target="_blank">Resume</a>
+        <a href="./awards.html">Projects</a>
+        <a href="#contact" class="right">Contact</a>
+    </div>
+    <table id="projects">
+        <tr>
+            <th>Project Description</th>
+            <th>Years Developed</th>
+            <th>More Info</th>
+        </tr>
+        <tr>
+            <td>Developed a personal website using HTML, CSS, and JS.</td>
+            <td>2018-Present</td>
+            <td><a href="#pic1">More Detail</a></td>
+        </tr>
+        <tr>
+            <td>Created a 2D interactive adventure game and designed and implemented a world generation algorithm.</td>
+            <td>2018</td>
+            <td><a href="#2D">More Detail</a></td>
+        </tr>
+        <tr>
+            <td>Used Java to develop a universe simulation with gravity and inelastic collisions.</td>
+            <td>2018</td>
+            <td><a href="#uni">More Detail</a></td>
+        </tr>
+        <tr>
+            <td>Used Python to implement a fully functional interpreter for the Scheme programming language. Ensured that evaluation was
+            properly tail recursive.</td>
+            <td>2017</td>
+            <td><a href="#scm">More Detail</a></td>
+        </tr>
+        <tr>
+            <td>Programmed the game logic for a tower defense game based on Plants vs Zombies called "Ants vs. SomeBees" in Python. Project utilized functional
+            and object-oriented programming paradigms.</td>
+            <td>2017</td>
+            <td><a href="#ants">More Detail</a></td>
+        </tr>
+        <tr>
+            <td>Implemented an application to create a Voronoi diagram visualization of nearby restaurants and their ratings using the
+            Yelp academic dataset in Python. Application used machine learning techniques to predict restaurant ratings.</td>
+            <td>2017</td>
+            <td><a href="#map">More Detail</a></td>
+        </tr>
+        <tr>
+            <td>Developed a simulator and several strategies for the dice game Hog using Python.</td>
+            <td>2017</td>
+            <td><a href="#hog">More Detail</a></td>
+        </tr>
+        <tr>
+            <td>Developed a virtual museum iOS application using Apple's 3D Scene Kit and incorporating 3D sound. Written in Swift 2.2.</td>
+            <td>2016</td>
+            <td><a href="#mus">More Detail</a></td>
+        </tr>
+    </table>
+    <div class="row">
+        <div class="maincolumn">
+            <div class="card">
+                <h2 id="uni">Universe Simulator</h2>
+                <h5>January, 2018</h5>
+                <img src="./images/uni.jpg" class="center" alt="A picture of the simulator" style="width:100%;"/>
+                <p class="desc">This project was essentially a physics simulator. The program could read in information about a universe
+                    and the objects within by looking through a text file. From there, it would render the objects and show
+                    their interactions over time. My simulation accounted for gravitational force, and allowed for inelastic collisions.
+                    I used the Princeton StdDraw class to render the objects.
+                </p>
+            </div>
+            <div class="card">
+                <h2 id="scm">Scheme Interpreter</h2>
+                <h5>November - December, 2017</h5>
+                <img src="./images/scm.jpg" class="center" alt="A picture of the interpreter" style="width:100%;"/>
+                <p class="desc">In my first delve into interpreters, I used Python to implement a fully functional interpreter for the Scheme
+                    programming language. Although Scheme is a fairly simple language, it was suprisingly challenging to implement all of its
+                    features. I used a read-evaluate-print loop to lex, parse and interpret user input. My interpreter supported proper
+                    tail recursion and macros. Boolean logic, functions, lambdas, and conditionals were all supported. I wrote extensive
+                    unit tests to verify the correctness of my implementation.
+                </p>
+            </div>
+            <div class="card"><h2 id="ants">Ants vs Bees Tower Defense Game</h2>
+                <h5>November, 2017</h5>
+                <img src="./images/ants.jpg" class="center" alt="A picture of the game" style="width:100%;"/>
+                <p class="desc">As my second game, I implemented the logic for a tower defense game using Python. I implemented multiple
+                    tower (ant) classes and enemy (bee) classes, including long ranged thrower ants, short range one-hit-kill ants,
+                    armored ant tanks, and long range de-buff towers with slow, stun, and damage over time effects.
+                    This was a large project, and made use of class inheritance. Working on this project taught me the importance of
+                    controlling complexity with well thought out code. I was provided with a graphical user interface to accompany the game.
+                </p>
+            </div>
+            <div class="card">
+                <h2 id="map">Restaraunt Map Application</h2>
+                <h5>October, 2017</h5>
+                <img src="./images/map.jpg" class="center" alt="A picture of the map" style="width:100%;" />
+                <p class="desc">For this project, I used the Python and the Yelp academic dataset to model restaraunts around Berkeley, using their
+                    names, locations, categories, prices, and reviews. I then implemented a Yelp-powered restaraunt recommedation program.
+                    The program takes a user's location, and returns a centroid corresponding to the cluster of retaraunts nearest to the user's
+                    position. I used a k-means algorithim to group restaraunts into clusters. From this cluster, I then used machine
+                    learning techniques to predict ratings for the unrated restaraunts based on the user's previous ratings. For the area
+                    closest to each centroid, I assigned a color based on the average rating for the restarunts in the cluster, and used
+                    this to create a voronoi diagram.
+                </p>
+            </div>
+            <div class="card">
+                <h2 id="hog">Hog Dice Game Simulator</h2>
+                <h5>October, 2017</h5>
+                <img src="./images/hog.jpg" class="center" alt="A picture of hog interface" style="width:100%;"/>
+                <p class="desc">For my first game, I worked to implement a simulator for a more complex version of the popular dice game Hog.
+                    I used Python to create a dice function that could simulate dice rolls. I then wrote a takeTurn function that could take
+                    a set of dice, a game state, and a strategy, and then make a play accordingly. Functions were added as needed so that human players
+                    could play against the computer, the computer could play against the computer, and players could play against each other.
+                    The simulator provided commentary during games. I was provided with a basic framework and graphical interface to use in
+                    my program. I used my simulation to design, test, and develop different strategies for my Hog game.
+                </p>
+            </div>
+            <div class="card">
+                <h2 id="mus">Virtual Museum iOS Application</h2>
+                <h5>July - August, 2016</h5>
+                <img src="./images/virtualmuseum.jpg" class="center" alt="A picture of virtual museum" style="width:100%;" />
+                <p class="desc">This project was my first major computer science project. I stayed at UCI for a month as part of the COSMOS
+                    (California State Academy for Math and Science) program. I was part of a 4 member team of high school students tasked with creating
+                    an application that could incorporate 3D sound. Essentially, 3D sound allows for the specific placement of sounds within a 3D scene,
+                    which can add realism to virtual spaces. Our team decided to develop a virtual museum application, so that people without physical
+                    access to traditional  museums could instead explore them from their mobile devices. As part of the project, I designed 3D exhibit models
+                    and placed them within a 3D scene using Apple's 3D Scenekit. Our app allowed for users to navigate between exhibits and listen to
+                    recorded scripts about each exhibit. The 3D sound scene responded to viewing angle using simple linear panning techniques.
+                    The project was coded primarily in Swift 2.2 using Xcode, though we also used sound editing software and 3D modeling software.
+                    You can view our research paper <a href="./files/cosmospaper.pdf" target="_blank">here</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="contact">
+        <h2>email: gavinkliger@gmail.com | phone: 949-441-8800 | address: 2400 Durant Av, Berkeley, CA, 94720</h2>
+    </div>
 </body>
 </html>
