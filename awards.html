@@ -31,11 +31,22 @@
       <th>Years Developed</th>
       <th>More Info</th>
     </tr>
+
     <tr>
       <td>Developed a personal website using HTML, CSS, and JS.</td>
       <td>2018-Present</td>
       <td><a href="#pic1">More Detail</a></td>
     </tr>
+      <tr>
+          <td>Created a 2D interactive adventure game and designed and implemented a world generation algorithm.</td>
+          <td>2018</td>
+          <td><a href="#2D">More Detail</a></td>
+      </tr>
+      <tr>
+          <td>Used Java to develop a universe simulation with gravity and inelastic collisions.</td>
+          <td>2018</td>
+          <td><a href="#uni">More Detail</a></td>
+      </tr>
     <tr>
       <td>Used Python to implement a fully functional interpreter for the Scheme programming language. Ensured that evaluation was
       properly tail recursive.</td>
@@ -69,24 +80,33 @@
   </table>
   <div class="row">
     <div class="maincolumn">
+        <div class="card">
+            <h2 id="uni">Universe Simulator</h2>
+            <h5>January, 2018</h5>
+            <img src="./images/uni.jpg" class="center" alt="A picture of the simulator" style="width:100%;"/>
+            <p class="desc">This project was essentially a physics simulator. The program could read in information about a universe
+            and the objects within by looking through a text file. From there, it would render the objects and show
+            their interactions over time. My simulation accounted for gravitational force, and allowed for inelastic collisions.
+            I used the Princeton StdDraw class to render the objects. </p>
+        </div>
       <div class="card">
         <h2 id="scm">Scheme Interpreter</h2>
         <h5>November - December, 2017</h5>
-        <img src="./images/scm.jpg" class="center" alt="A picture of the game" style="width:100%;"/>
-        <p class="desc">For this project, I used Python to implement a fully functional interpreter for the Scheme programming
-          language. I used a read-evaluate-print loop to lex, parse and interpret user input. My interpreter supported tail recursion and
-          macros. Boolean logic, functions, lambdas, and conditionals were all supported. You can see my interpreter in action above.
-          I wrote extensive unit tests to verify the correctness of my implementation.
+        <img src="./images/scm.jpg" class="center" alt="A picture of the interpreter" style="width:100%;"/>
+        <p class="desc">In my first delve into interpreters, I used Python to implement a fully functional interpreter for the Scheme
+            programming language. Although Scheme is a fairly simple language, it was suprisingly challenging to implement all of its
+            features. I used a read-evaluate-print loop to lex, parse and interpret user input. My interpreter supported proper
+            tail recursion and macros. Boolean logic, functions, lambdas, and conditionals were all supported. I wrote extensive
+            unit tests to verify the correctness of my implementation. </p>
       </div>
-      <div class="card">
-        <h2 id="ants">Ants vs Bees Tower Defense Game</h2>
+      <div class="card"><h2 id="ants">Ants vs Bees Tower Defense Game</h2>
         <h5>November, 2017</h5>
         <img src="./images/ants.jpg" class="center" alt="A picture of the game" style="width:100%;"/>
-        <p class="desc">For this project, I implemented the logic for a tower defense game using Python. I implemented multiple 
-          tower classes and enemy classes, including long ranged towers, short range towers, armored towers, and de-buff towers.
+        <p class="desc">As my second game, I implemented the logic for a tower defense game using Python. I implemented multiple
+          tower (ant) classes and enemy (bee) classes, including long ranged thrower ants, short range one-hit-kill ants,
+            armored ant tanks, and long range de-buff towers with slow, stun, and damage over time effects.
           This was a large project, and made use of class inheritance. Working on this project taught me the importance of
-          controlling complexity with effective and well thought out code.
-          I was provided with a graphical user interface to accompany the game.  </p>
+          controlling complexity with well thought out code. I was provided with a graphical user interface to accompany the game.</p>
       </div>
       <div class="card">
         <h2 id="map">Restaraunt Map Application</h2>
@@ -104,10 +124,10 @@
         <h2 id="hog">Hog Dice Game Simulator</h2>
         <h5>October, 2017</h5>
         <img src="./images/hog.jpg" class="center" alt="A picture of hog interface" style="width:100%;"/>
-        <p class="desc">For this project, I worked to implement a simulator for a more complex cersion of the popular dice game Hog.
+        <p class="desc">For my first game, I worked to implement a simulator for a more complex version of the popular dice game Hog.
           I used Python to create a dice function that could simulate dice rolls. I then wrote a takeTurn function that could take 
-          a set of dice, game state, and strategy, and then make a play accordingly. Functions were added as needed so that human players 
-          could play against the computer, the computer could play against the computer, and players could play against eachother.
+          a set of dice, a game state, and a strategy, and then make a play accordingly. Functions were added as needed so that human players
+          could play against the computer, the computer could play against the computer, and players could play against each other.
           The simulator provided commentary during games. I was provided with a basic framework and graphical interface to use in 
           my program. I used my simulation to design, test, and develop different strategies for my Hog game.</p>
       </div>
