@@ -1,4 +1,4 @@
-    *{
+    * {
       box-sizing: border-box;
     }
 
@@ -10,10 +10,10 @@
     }
 
     p {
-    font-family: Arial;
-    font-size: 18px;
-    line-height: 1.6;
-  }
+      font-family: Arial;
+      font-size: 18px;
+      line-height: 1.6;
+    }
 
     /* Header/logo Title */
 
@@ -129,7 +129,7 @@
 
     #projects td,
     #projects th {
-      border: 1px solid #ddd;
+      border: 2px solid #adadad;
       padding: 8px;
     }
 
@@ -141,44 +141,50 @@
       background-color: #ddd;
     }
 
-#projects th {
+    #projects th {
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
       background-color: #7c808f;
       color: white;
-}
-.center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-}
+    }
+
+    .center {
+      margin: auto;
+      width: 50%;
+      border: 3px solid green;
+      padding: 10px;
+    }
 
 
-.maincolumn {   
-    float: left;
-    width: 100%;
-    padding: 20px;
-}
+    .maincolumn {
+      float: left;
+      width: 100%;
+      padding: 20px;
+    }
 
 
-.card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-}
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-#projects {
-    font-family: Arial;
-    background: #f1f1f1;
-}
+    #projects {
+      font-family: Arial;
+      background: #f1f1f1;
+    }
+
+    .projects {
+        font-family: Arial;
+        background: #f1f1f1;
+    }
     
     
 
