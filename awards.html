@@ -38,12 +38,11 @@
         <tr>
             <td>Developed a personal website using HTML, CSS, and JS.</td>
             <td>2018-Present</td>
-            <td><a href="#pic1">More Detail</a></td>
         </tr>
         <tr>
             <td>Created a 2D interactive adventure game and designed and implemented a world generation algorithm.</td>
             <td>2018</td>
-            <td><a href="#2D">More Detail</a></td>
+            <td><a href="#game">More Detail</a></td>
         </tr>
         <tr>
             <td>Used Java to develop a universe simulation with gravity and inelastic collisions.</td>
@@ -81,6 +80,32 @@
     </table>
     <div class="row">
         <div class="maincolumn">
+            <div class="card">
+                <h2 id="game">Time Runner Game</h2>
+                <h5>January, 2018</h5>
+                <img class="mySlides" src="./images/game.jpg" style="width:100%">
+                <img class="mySlides" src="./images/game2.jpg" style="width:100%">
+                <img class="mySlides" src="./images/game3.jpg" style="width:100%">
+                <img class="mySlides" src="./images/game4.jpg" style="width:100%">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                <p class="desc">This was my most recent endeavor into software engineering. I decided to create a 2D game,
+                    which I called "Time Runner." You can scroll through the image gallery above. To start, I wrote a world
+                    generation algorithm from scratch. The
+                    algorithm would take a user-inputted seed, and generate a 2D tile grid comprised of "floor" and
+                    "wall" tiles. I used hall and room classes to position halls and rooms randomly throughout the map,
+                    ensuring that every floor tile was reachable for the player. I then added gameplay mechanics. The game
+                    had three levels; each a randomly generated world. The player proceeds to the next level by reaching a door,
+                    which I represented as a goal object. The player can move up, down, left, or right via keyboard input,
+                    and each move costs 1 life. I added 20 life health boost blocks randomly throughout the maps,
+                    an interesting gampelay mechanic that encourages players to take less obvious paths to victory.
+                    The game had a home screen, and supported saves. To improve the user interface, I added a heads up
+                    display that would give info about a tile if the user hovered their mouse over it. To win the game,
+                    players could complete all three levels with as many lives as possible; their remaining lives
+                    were used to calculate their score. I used the StdDraw and StdRandom libraries to
+                    read keyboard input and generate random numbers. Code available upon request.
+                </p>
+            </div>
             <div class="card">
                 <h2 id="uni">Universe Simulator</h2>
                 <h5>January, 2018</h5>
@@ -158,5 +183,24 @@
     <div class="footer" id="contact">
         <h2>email: gavinkliger@gmail.com | phone: 949-441-8800 | address: 2400 Durant Av, Berkeley, CA, 94720</h2>
     </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
 </body>
 </html>
