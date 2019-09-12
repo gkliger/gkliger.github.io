@@ -36,6 +36,16 @@
             <th>More Info</th>
         </tr>
         <tr>
+            <td>Designed a 2-stage RISC-V datapath with controls capable of executing all RISC-V instructions.</td>
+            <td>2018</td>
+            <td><a href="#depth">More Detail</a></td>
+        </tr>
+        <tr>
+            <td>Created a program to generate depth maps from 2-dimensional images using computer vision techniques. </td>
+            <td>2018</td>
+            <td><a href="#depth">More Detail</a></td>
+        </tr>
+        <tr>
             <td>Used real world data to implement the back end of a web server that supported a mapping application. </td>
             <td>2018</td>
             <td><a href="#map2">More Detail</a></td>
@@ -85,6 +95,29 @@
     </table>
     <div class="row">
         <div class="maincolumn">
+            <div class="card">
+                <h2 id="depth">RISC-V CPU</h2>
+                <h5>November, 2018</h5>
+                <img src="./images/cpu.jpg" class="center" alt="A top view of the circuit" style="width:100%;"/>
+                <p class="desc">I designed and implemented a 2-stage RISC-V CPU in Logisim. The CPU supported all RISC-V
+                    instructions and instruction types. I designed and implemented the datapath, ALU, branch comparator,
+                    registers, immediate generator, and numerous other components, which are available to view upon request.
+                    This was an involved project, and supported no-ops to support complex instruction sequences.
+                </p>
+            </div>
+            <div class="card">
+                <h2 id="depth">Depth Map Generator</h2>
+                <h5>September, 2018</h5>
+                <img src="./images/depth.jpg" class="center" alt="An example of the depth map" style="width:100%;"/>
+                <p class="desc">I implemented an application to convert left and right stereo images into depth maps,
+                    black and white images where pixel color values correspond to the depth of objects in the original
+                    stereo pictures. I used a block matching technique with squared Euclidian distance to identify common
+                    features between the left and right stereo images. From there, I calculate image displacement,
+                    and then use this value to determine the depth of the feature object. I store the depth maps
+                    using quadtree compression. To ensure my application could run quickly, I wrote it in C and the
+                    assembly language RISC-V.
+                </p>
+            </div>
             <div class="card">
                 <h2 id="map2">Berkeley Maps</h2>
                 <h5>March - April, 2018</h5>
